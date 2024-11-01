@@ -11,10 +11,11 @@ import TitleCard from "./elements_card/TitleCard.astro";
   <h3 class="text-white font-bold text-[40px]">Proyects</h3>
   <p class="text-gray-500 font-medium">Things I’ve built so far</p>
   <div class="flex flex-wrap gap-5 p-12 items-center justify-center">
+    <!-- Neuralin -->
     <Card>
       <ImageCard
         altImage="Neuralin IA"
-        srcImage="../public/images_proyects/neuralin.png"
+        srcImage="/images_proyects/neuralin.png"
       />
       <div class="px-5 py-2">
         <TitleCard>Chatbox con API de Gemini y JavaScript.</TitleCard>
@@ -22,11 +23,30 @@ import TitleCard from "./elements_card/TitleCard.astro";
           >Un chat interactivo que emplea la API de Gemini para respuestas
           precisas y naturales. Implementa fetching de datos.</DescriptionCard
         >
-        <TechStackCard>Htlm, CSS, JavaScript, Markdown.</TechStackCard>
+        <TechStackCard>Htlm, CSS, JavaScript.</TechStackCard>
       </div>
       <LinksCard
         Preview="https://neuralin-ia.vercel.app/"
         CodeProyect="https://github.com/Sigmaprogram/neuralin-ia"
+      />
+    </Card>
+    <!-- BentoGrids -->
+    <Card>
+      <ImageCard
+        altImage="Bentogrids para mostrar proyectos"
+        srcImage="/images_proyects/bentos.png"
+      />
+      <div class="px-5 py-2">
+        <TitleCard>Muestra de Proyectos con BentoGrids.</TitleCard>
+        <DescriptionCard
+          >Practica de maquetacion con bentogids para mostrar tus proyectos en
+          tu portafolio.</DescriptionCard
+        >
+        <TechStackCard>Htlm, CSS.</TechStackCard>
+      </div>
+      <LinksCard
+        Preview="https://betogrids.vercel.app/"
+        CodeProyect="https://github.com/Sigmaprogram/betogrids"
       />
     </Card>
   </div>
