@@ -1,0 +1,30 @@
+---
+import Discord from "./icons/socialnetworks/Discord.astro";
+import Github from "./icons/socialnetworks/Github.astro";
+---
+
+<section class="w-full sticky top-0 bg-[rgb(0,0,0,0)] backdrop-blur-xl">
+  <nav
+    class="max-w-[1440px] mx-auto flex justify-between py-5 px-10 items-center"
+  >
+    <img
+      class="w-[130px]"
+      src="/public/logo.svg"
+      alt="Logo del portafolio de kervin"
+    />
+    <div class="flex gap-11 items-center">
+      <a class="font-medium text-[#889e] hover:text-[#ddd]" href="#">Home</a>
+      <a class="font-medium text-[#889e] hover:text-[#ddd]" href="#">About</a>
+      <a class="font-medium text-[#889e] hover:text-[#ddd]" href="#"
+        >Tech Stack</a
+      >
+      <a class="font-medium text-[#889e] hover:text-[#ddd]" href="#">Proyects</a
+      >
+      <a class="font-medium text-[#889e] hover:text-[#ddd]" href="#">Contact</a>
+      <div class="flex gap-3 items-center">
+        <Discord href="https://discord.com/" />
+        <Github href="https://github.com/Sigmaprogram" />
+      </div>
+    </div>
+  </nav>
+</section>

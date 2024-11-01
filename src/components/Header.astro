@@ -1,0 +1,25 @@
+---
+import TextSpam from "./text/TextSpam.astro";
+---
+
+<div
+  class="max-w-[1440px] mx-auto flex justify-evenly mt-[150px] items-center px-14 gap-12"
+>
+  <div class="max-w-[600px] text-gray-100 font-bold text-7xl text-wrap">
+    <h2 class="text-center lg:text-left">
+      Hi👋, My name is <TextSpam
+        class="bg-gradient-to-r from-[#13B0F5] to-[#E70FAA] bg-clip-text text-transparent"
+        >Kervin Leonardo</TextSpam
+      > I build things for web.
+    </h2>
+  </div>
+  <figure
+    class="max-w-[340px] rounded-full p-[10px] bg-gradient-to-tl from-[#E70FAA] to-[#13B0F5] hidden lg:block"
+  >
+    <img
+      class="min-w-[310px] rounded-full"
+      src="/public/me.png"
+      alt="Kervin Leonardo"
+    />
+  </figure>
+</div>

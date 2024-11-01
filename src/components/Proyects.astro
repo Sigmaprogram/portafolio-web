@@ -1,0 +1,33 @@
+---
+import Card from "./Card.astro";
+import DescriptionCard from "./elements_card/DescriptionCard.astro";
+import ImageCard from "./elements_card/ImageCard.astro";
+import LinksCard from "./elements_card/LinksCard.astro";
+import TechStackCard from "./elements_card/TechStackCard.astro";
+import TitleCard from "./elements_card/TitleCard.astro";
+---
+
+<div class="max-w-[1440px] flex flex-col items-center mx-auto mt-[150px] gap-1">
+  <h3 class="text-white font-bold text-[40px]">Proyects</h3>
+  <p class="text-gray-500 font-medium">Things I’ve built so far</p>
+  <div class="flex flex-wrap gap-5 p-12 items-center justify-center">
+    <Card>
+      <ImageCard
+        altImage="Neuralin IA"
+        srcImage="/public/images_proyects/neuralin.png"
+      />
+      <div class="px-5 py-2">
+        <TitleCard>Chatbox con API de Gemini y JavaScript.</TitleCard>
+        <DescriptionCard
+          >Un chat interactivo que emplea la API de Gemini para respuestas
+          precisas y naturales. Implementa fetching de datos.</DescriptionCard
+        >
+        <TechStackCard>Htlm, CSS, JavaScript, Markdown.</TechStackCard>
+      </div>
+      <LinksCard
+        Preview="https://neuralin-ia.vercel.app/"
+        CodeProyect="https://github.com/Sigmaprogram/neuralin-ia"
+      />
+    </Card>
+  </div>
+</div>
