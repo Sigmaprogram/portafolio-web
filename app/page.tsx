@@ -43,15 +43,15 @@ export default function Home() {
                   </Button>
                 </div>
                 <div className="flex items-center gap-6">
-                  <Link href="https://github.com/username" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://github.com/Sigmaprogram/" target="_blank" rel="noopener noreferrer">
                     <Github className="h-6 w-6 text-dark-900 hover:text-white transition-colors" />
                     <span className="sr-only">GitHub</span>
                   </Link>
-                  <Link href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://www.linkedin.com/in/kervin-daniel-leonardo-francois-1528b52b0/" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="h-6 w-6 text-dark-900 hover:text-white transition-colors" />
                     <span className="sr-only">LinkedIn</span>
                   </Link>
-                  <Link href="mailto:tu@email.com">
+                  <Link href="mailto:kervindanielleonardo@gmail.com">
                     <Mail className="h-6 w-6 text-dark-900 hover:text-white transition-colors" />
                     <span className="sr-only">Email</span>
                   </Link>

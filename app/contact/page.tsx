@@ -76,19 +76,19 @@ export default function ContactPage() {
                 <div className="space-y-2">
                   <h3 className="font-medium">Sígueme en</h3>
                   <div className="flex items-center gap-4">
-                    <Link href="https://github.com/username" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://github.com/Sigmaprogram" target="_blank" rel="noopener noreferrer">
                       <Button variant="outline" size="icon">
                         <Github className="h-5 w-5" />
                         <span className="sr-only">GitHub</span>
                       </Button>
                     </Link>
-                    <Link href="https://linkedin.com/in/username" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://www.linkedin.com/in/kervin-daniel-leonardo-francois-1528b52b0/" target="_blank" rel="noopener noreferrer">
                       <Button variant="outline" size="icon">
                         <Linkedin className="h-5 w-5" />
                         <span className="sr-only">LinkedIn</span>
                       </Button>
                     </Link>
-                    <Link href="https://twitter.com/username" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://x.com/Kervin_fr" target="_blank" rel="noopener noreferrer">
                       <Button variant="outline" size="icon">
                         <Twitter className="h-5 w-5" />
                         <span className="sr-only">Twitter</span>

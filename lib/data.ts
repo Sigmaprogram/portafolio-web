@@ -70,32 +70,32 @@ export const projects: Project[] = [
   }
 ]
 
-export const testimonials: Testimonial[] = [
-  {
-    id: 1,
-    name: "Ana García",
-    position: "CEO",
-    company: "TechSolutions",
-    text: "Un profesional excepcional. Entregó el proyecto antes de lo previsto y con una calidad superior a la esperada.",
-    rating: 5,
-    avatar: "/placeholder.svg?height=100&width=100",
-  }
-]
+// export const testimonials: Testimonial[] = [
+//   {
+//     id: 1,
+//     name: "Ana García",
+//     position: "CEO",
+//     company: "TechSolutions",
+//     text: "Un profesional excepcional. Entregó el proyecto antes de lo previsto y con una calidad superior a la esperada.",
+//     rating: 5,
+//     avatar: "/placeholder.svg?height=100&width=100",
+//   }
+// ]
 
-export const experience: Experience[] = [
-  {
-    company: "TechSolutions",
-    position: "Desarrollador Full Stack Senior",
-    period: "2021 - Presente",
-    description:
-      "Desarrollo y mantenimiento de aplicaciones web para clientes de diversos sectores. Liderazgo técnico en proyectos clave.",
-    achievements: [
-      "Reducción del 40% en tiempo de carga",
-      "Implementación de CI/CD",
-      "Mentorización de desarrolladores junior",
-    ],
-  },
-]
+// export const experience: Experience[] = [
+//   {
+//     company: "TechSolutions",
+//     position: "Desarrollador Full Stack Senior",
+//     period: "2021 - Presente",
+//     description:
+//       "Desarrollo y mantenimiento de aplicaciones web para clientes de diversos sectores. Liderazgo técnico en proyectos clave.",
+//     achievements: [
+//       "Reducción del 40% en tiempo de carga",
+//       "Implementación de CI/CD",
+//       "Mentorización de desarrolladores junior",
+//     ],
+//   },
+// ]
 
 export const education: Education[] = [
   {
