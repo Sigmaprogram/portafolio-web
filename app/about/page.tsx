@@ -69,7 +69,7 @@ export default function AboutPage() {
               <div className="flex justify-center lg:justify-end">
                 <div className="relative w-80 h-96 lg:w-96 lg:h-[500px]">
                   <Image
-                    src="/placeholder.svg?height=500&width=400"
+                    src="/me.png"
                     alt="Professional photo"
                     fill
                     className="object-cover rounded-2xl border border-dark-400"

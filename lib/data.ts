@@ -1,3 +1,14 @@
+// Pendiente
+/**
+ Agregar certificaciones, Testimonios ,Experiencia y completar Proyectos.
+
+ Proyectos: 
+ KODE
+ Cuadro Arquitectura
+
+ */
+
+
 export interface Project {
   id: number
   title: string
@@ -72,18 +83,18 @@ export const testimonials: Testimonial[] = [
 ]
 
 export const experience: Experience[] = [
-  // {
-  //   company: "TechSolutions",
-  //   position: "Desarrollador Full Stack Senior",
-  //   period: "2021 - Presente",
-  //   description:
-  //     "Desarrollo y mantenimiento de aplicaciones web para clientes de diversos sectores. Liderazgo técnico en proyectos clave.",
-  //   achievements: [
-  //     "Reducción del 40% en tiempo de carga",
-  //     "Implementación de CI/CD",
-  //     "Mentorización de desarrolladores junior",
-  //   ],
-  // },
+  {
+    company: "TechSolutions",
+    position: "Desarrollador Full Stack Senior",
+    period: "2021 - Presente",
+    description:
+      "Desarrollo y mantenimiento de aplicaciones web para clientes de diversos sectores. Liderazgo técnico en proyectos clave.",
+    achievements: [
+      "Reducción del 40% en tiempo de carga",
+      "Implementación de CI/CD",
+      "Mentorización de desarrolladores junior",
+    ],
+  },
 ]
 
 export const education: Education[] = [
@@ -93,11 +104,23 @@ export const education: Education[] = [
     period: "2022 - 2025",
     description: "Tecnicatura Superior en Desarrollo de Aplicaciones y Sistemas Informáticos.",
   },
+    {
+    institution: "Centu",	
+    degree: "Desarrollo de Aplicaciones Web",
+    period: "2022 - 2025",
+    description: "Tecnicatura Superior en Desarrollo de Aplicaciones Web con C# y SQL server.",
+  },
 ]
 
 export const certifications: Certification[] = [
   {
     title: "Conceptos Basicos de Computación",
+    issuer: "Cisco Academy",
+    date: "2024",
+    url: "/",
+  },
+    {
+    title: "Introducción a la Civerseguridad",
     issuer: "Cisco Academy",
     date: "2024",
     url: "/",

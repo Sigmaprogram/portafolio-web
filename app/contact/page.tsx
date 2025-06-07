@@ -62,21 +62,14 @@ export default function ContactPage() {
                     <Mail className="h-5 w-5 text-primary mt-0.5" />
                     <div>
                       <h3 className="font-medium">Email</h3>
-                      <p className="text-sm text-muted-foreground">tu@email.com</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Phone className="h-5 w-5 text-primary mt-0.5" />
-                    <div>
-                      <h3 className="font-medium">Teléfono</h3>
-                      <p className="text-sm text-muted-foreground">+34 123 456 789</p>
+                      <p className="text-sm text-muted-foreground">Kervindanielleonardo@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <MapPin className="h-5 w-5 text-primary mt-0.5" />
                     <div>
                       <h3 className="font-medium">Ubicación</h3>
-                      <p className="text-sm text-muted-foreground">Madrid, España</p>
+                      <p className="text-sm text-muted-foreground">Dominican Republic, San Pedro de Macoris</p>
                     </div>
                   </div>
                 </div>
@@ -128,7 +121,7 @@ export default function ContactPage() {
                     >
                       Email
                     </label>
-                    <Input id="email" type="email" placeholder="tu@email.com" required />
+                    <Input id="email" type="email" placeholder="Example@email.com" required />
                   </div>
                   <div className="grid gap-3">
                     <label
