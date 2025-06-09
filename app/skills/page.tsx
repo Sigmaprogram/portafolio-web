@@ -1,11 +1,11 @@
-import Link from "next/link"
-import { ArrowLeft } from "lucide-react"
+import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
-import SkillLogo from "@/components/skill-logo"
-import { skillsWithLogos } from "@/lib/data"
+import { Button } from "@/components/ui/button";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import SkillLogo from "@/components/skill-logo";
+import { skillsWithLogos } from "@/lib/data";
 
 export default function SkillsPage() {
   return (
@@ -16,15 +16,20 @@ export default function SkillsPage() {
           <div className="container container-padding">
             <div className="space-y-20">
               <div className="text-center space-y-4">
-                <h1 className="text-4xl font-bold tracking-tight lg:text-5xl">Skills & Technologies</h1>
+                <h1 className="text-4xl font-bold tracking-tight lg:text-5xl">
+                  Skills & Technologies
+                </h1>
                 <p className="text-lg text-dark-900 max-w-2xl mx-auto">
-                  A comprehensive overview of the technologies and tools I use to build exceptional digital experiences.
+                  A comprehensive overview of the technologies and tools I use
+                  to build exceptional digital experiences.
                 </p>
               </div>
 
               {/* Frontend */}
               <div className="space-y-10 ">
-                <h2 className="text-2xl font-bold tracking-tight text-center">Frontend Development</h2>
+                <h2 className="text-2xl font-bold tracking-tight text-center">
+                  Frontend Development
+                </h2>
                 <div className="flex justify-center flex-wrap gap-16">
                   {skillsWithLogos.Frontend.map((skill) => (
                     <SkillLogo key={skill.name} skill={skill} />
@@ -34,7 +39,9 @@ export default function SkillsPage() {
 
               {/* Backend */}
               <div className="space-y-10">
-                <h2 className="text-2xl font-bold tracking-tight text-center">Backend Development</h2>
+                <h2 className="text-2xl font-bold tracking-tight text-center">
+                  Backend Development
+                </h2>
                 <div className="flex justify-center flex-wrap gap-16">
                   {skillsWithLogos.Backend.map((skill) => (
                     <SkillLogo key={skill.name} skill={skill} />
@@ -44,7 +51,9 @@ export default function SkillsPage() {
 
               {/* Tools */}
               <div className="space-y-10">
-                <h2 className="text-2xl font-bold tracking-tight text-center">Tools & Technologies</h2>
+                <h2 className="text-2xl font-bold tracking-tight text-center">
+                  Tools & Technologies
+                </h2>
                 <div className="flex justify-center flex-wrap gap-16">
                   {skillsWithLogos.Tools.map((skill) => (
                     <SkillLogo key={skill.name} skill={skill} />
@@ -62,10 +71,10 @@ export default function SkillsPage() {
                 </div>
               </div> */}
 
-              <div className="text-center pt-8">
-                <Button asChild variant="outline" className="border-dark-600 hover:bg-dark-200">
+              <div className="flex justify-center mt-12">
+                <Button asChild variant="outline">
                   <Link href="/">
-                    <ArrowLeft className="mr-2 h-4 w-4" /> Back to home
+                    <ArrowLeft className="mr-2 h-4 w-4" /> Volver al inicio
                   </Link>
                 </Button>
               </div>
@@ -75,5 +84,5 @@ export default function SkillsPage() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }

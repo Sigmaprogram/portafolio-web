@@ -64,7 +64,7 @@ export const projects: Project[] = [
     title: "Point of Sale | Click Venta",
     description: "Una plataforma de punto de venta para tiendas y pequeños negocios con funcionalidades como el control de inventario, ventas, clientes y control de usuarios y roles en el sistema.",
     image: "/projects/POS.png",
-    technologies: ["NextJS", "MySQL", "Tailwind CSS", "Laravel", "TypeScript"],
+    technologies: ["NextJS", "MySQL","Laravel", "Tailwind CSS","TypeScript",],
     demoUrl: "https://click-venta-pos.vercel.app/",
     githubUrl: "https://github.com/Sigmaprogram/click-venta-pos",
   }

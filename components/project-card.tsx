@@ -1,14 +1,21 @@
-import Image from "next/image"
-import Link from "next/link"
-import { ExternalLink, Github } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import { ExternalLink, Github } from "lucide-react";
 
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import type { Project } from "@/lib/data"
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import type { Project } from "@/lib/data";
 
 interface ProjectCardProps {
-  project: Project
+  project: Project;
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
@@ -38,7 +45,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       <CardFooter className="flex justify-between">
         {project.demoUrl && (
           <Button asChild variant="outline" size="sm">
-            <Link href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+            <Link
+              href={project.demoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <ExternalLink className="mr-2 h-4 w-4" />
               Demo
             </Link>
@@ -46,7 +57,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         )}
         {project.githubUrl && (
           <Button asChild variant="outline" size="sm">
-            <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+            <Link
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Github className="mr-2 h-4 w-4" />
               Código
             </Link>
@@ -54,5 +69,5 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         )}
       </CardFooter>
     </Card>
-  )
+  );
 }

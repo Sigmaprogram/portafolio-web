@@ -1,12 +1,28 @@
-import Link from "next/link"
-import Image from "next/image"
-import { ArrowRight, Download, Mail, MapPin, Phone, Calendar, Award, GraduationCap } from "lucide-react"
+import Link from "next/link";
+import Image from "next/image";
+import {
+  ArrowRight,
+  Download,
+  Mail,
+  MapPin,
+  Phone,
+  Calendar,
+  Award,
+  GraduationCap,
+} from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
-import { certifications, education } from "@/lib/data"
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import { certifications, education } from "@/lib/data";
+import { ArrowLeft } from "lucide-react";
 
 export default function AboutPage() {
   return (
@@ -19,16 +35,22 @@ export default function AboutPage() {
             <div className="grid gap-16 lg:grid-cols-2 lg:gap-24 items-center">
               <div className="space-y-8">
                 <div className="space-y-4">
-                  <h1 className="text-4xl font-bold tracking-tight lg:text-5xl">About Me</h1>
+                  <h1 className="text-4xl font-bold tracking-tight lg:text-5xl">
+                    About Me
+                  </h1>
                   <p className="text-lg text-dark-900 leading-relaxed">
-                    I'm a passionate full-stack developer with over 5 years of experience creating digital solutions
-                    that make a difference. I specialize in modern web technologies and have a strong focus on user
-                    experience and performance optimization.
+                    I'm a passionate full-stack developer with over 5 years of
+                    experience creating digital solutions that make a
+                    difference. I specialize in modern web technologies and have
+                    a strong focus on user experience and performance
+                    optimization.
                   </p>
                   <p className="text-lg text-dark-900 leading-relaxed">
-                    My journey in tech started with a curiosity about how things work, which led me to pursue computer
-                    science and eventually specialize in web development. I've had the privilege of working with
-                    startups and established companies, helping them bring their digital visions to life.
+                    My journey in tech started with a curiosity about how things
+                    work, which led me to pursue computer science and eventually
+                    specialize in web development. I've had the privilege of
+                    working with startups and established companies, helping
+                    them bring their digital visions to life.
                   </p>
                 </div>
 
@@ -39,7 +61,9 @@ export default function AboutPage() {
                     </div>
                     <div>
                       <p className="text-sm text-dark-900">Email</p>
-                      <p className="font-medium">Kervindanielleonardo@gmail.com</p>
+                      <p className="font-medium">
+                        Kervindanielleonardo@gmail.com
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
@@ -48,18 +72,27 @@ export default function AboutPage() {
                     </div>
                     <div>
                       <p className="text-sm text-dark-900">Location</p>
-                      <p className="font-medium">Dominican Republic, San pedro de Macoris</p>
+                      <p className="font-medium">
+                        Dominican Republic, San pedro de Macoris
+                      </p>
                     </div>
                   </div>
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button asChild className="bg-primary hover:bg-primary/90 text-black font-medium">
+                  <Button
+                    asChild
+                    className="bg-primary hover:bg-primary/90 text-black font-medium"
+                  >
                     <Link href="/contact">
                       Get in touch <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
-                  <Button variant="outline" asChild className="border-dark-600 hover:bg-dark-200">
+                  <Button
+                    variant="outline"
+                    asChild
+                    className="border-dark-600 hover:bg-secondary"
+                  >
                     <Link href="/files/cv.pdf" target="_blank">
                       <Download className="mr-2 h-4 w-4" /> Download CV
                     </Link>
@@ -95,16 +128,22 @@ export default function AboutPage() {
                         <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 border border-primary/20">
                           <GraduationCap className="h-5 w-5 text-primary" />
                         </div>
-                        {index < education.length - 1 && <div className="h-full w-0.5 bg-dark-400 mt-2"></div>}
+                        {index < education.length - 1 && (
+                          <div className="h-full w-0.5 bg-dark-400 mt-2"></div>
+                        )}
                       </div>
                       <div className="space-y-2 pb-6">
                         <div className="flex items-center gap-2">
                           <Calendar className="h-4 w-4 text-dark-900" />
-                          <span className="text-sm text-dark-900">{item.period}</span>
+                          <span className="text-sm text-dark-900">
+                            {item.period}
+                          </span>
                         </div>
                         <h3 className="text-lg font-semibold">{item.degree}</h3>
                         <p className="text-dark-900">{item.institution}</p>
-                        <p className="text-sm text-dark-900">{item.description}</p>
+                        <p className="text-sm text-dark-900">
+                          {item.description}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -113,7 +152,9 @@ export default function AboutPage() {
 
               {/* Certifications */}
               <div className="space-y-8">
-                <h2 className="text-2xl font-bold tracking-tight">Certifications</h2>
+                <h2 className="text-2xl font-bold tracking-tight">
+                  Certifications
+                </h2>
                 <div className="grid gap-4">
                   {certifications.map((cert, index) => (
                     <Card key={index} className="bg-dark-300 border-dark-500">
@@ -123,8 +164,12 @@ export default function AboutPage() {
                             <Award className="h-4 w-4 text-primary" />
                           </div>
                           <div className="flex-1">
-                            <CardTitle className="text-base">{cert.title}</CardTitle>
-                            <CardDescription className="text-dark-900">{cert.issuer}</CardDescription>
+                            <CardTitle className="text-base">
+                              {cert.title}
+                            </CardTitle>
+                            <CardDescription className="text-dark-900">
+                              {cert.issuer}
+                            </CardDescription>
                           </div>
                         </div>
                       </CardHeader>
@@ -132,11 +177,21 @@ export default function AboutPage() {
                         <div className="flex items-center justify-between">
                           <div className="flex items-center gap-2">
                             <Calendar className="h-4 w-4 text-dark-900" />
-                            <span className="text-sm text-dark-900">{cert.date}</span>
+                            <span className="text-sm text-dark-900">
+                              {cert.date}
+                            </span>
                           </div>
                           {cert.url && (
-                            <Button variant="link" className="p-0 h-auto text-primary hover:text-primary/80" asChild>
-                              <Link href={cert.url} target="_blank" rel="noopener noreferrer">
+                            <Button
+                              variant="link"
+                              className="p-0 h-auto text-primary hover:text-primary/80"
+                              asChild
+                            >
+                              <Link
+                                href={cert.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
                                 View Certificate
                               </Link>
                             </Button>
@@ -149,9 +204,17 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
+          <div className="flex justify-center mt-12">
+            <Button asChild variant="outline">
+              <Link href="/">
+                <ArrowLeft className="mr-2 h-4 w-4" /> Volver al inicio
+              </Link>
+            </Button>
+          </div>
         </section>
       </main>
+
       <Footer />
     </div>
-  )
+  );
 }
