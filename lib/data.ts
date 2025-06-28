@@ -110,8 +110,8 @@ export const projects: Project[] = [
     description: "Aplicacion de escritorio para getion de ventas y control de inventario para la empresa Andy Repuestos, con funcionalidades de gestion de productos, ventas, clientes y reportes.",
     image: "/",
     technologies: ["Visual Basic", "SQL Server"],
-    demoUrl: "/",
-    githubUrl: "/",
+    demoUrl: "",
+    githubUrl: "https://github.com/Sigmaprogram/andy-repuestos",
   }
   ,
     {
