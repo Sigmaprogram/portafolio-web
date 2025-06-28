@@ -61,13 +61,78 @@ export interface SkillWithLogo{
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Point of Sale | Click Venta",
+    title: "Click Venta Point of Sale",
     description: "Una plataforma de punto de venta para tiendas y pequeños negocios con funcionalidades como el control de inventario, ventas, clientes y control de usuarios y roles en el sistema.",
     image: "/projects/POS.png",
-    technologies: ["NextJS", "MySQL","Laravel", "Tailwind CSS","TypeScript",],
+    technologies: ["NextJS", "TypeScript","MySQL", "Tailwind CSS"],
     demoUrl: "https://click-venta-pos.vercel.app/",
     githubUrl: "https://github.com/Sigmaprogram/click-venta-pos",
+  },
+    {
+    id: 2,
+    title: "Cuadro Arquitectura Landing Page",
+    description: "Landing page para la empresa de arquitectura Cuadro Arquitectura, incluye portafolio de proyectos y servicios.",
+    image: "/projects/CuadroArquitectura.png",
+    technologies: ["Angular", "Tailwind CSS","NodeJS", "MySQL"],
+    demoUrl: "https://cuadro-arquitectura.vercel.app/",
+    githubUrl: "https://github.com/Sigmaprogram/cuadro-arquitectura",
+  },
+  {
+    id: 3,
+    title: "DoFlow Aplicación de Productividad",
+    description: "Aplicación para habitos de productividad, con funcionalidades para gestionar el tiempo y el uso de tecnicas como pomodoro, gestion de tareas, etc.",
+    image: "/",
+    technologies: ["React", "Tailwind CSS","Laravel", "PostgreSQL"],
+    demoUrl: "/",
+    githubUrl: "/",
+  },
+    {
+    id: 4,
+    title: "Kode",
+    description: "Aplicacion web para empresa de desarrollo de software, para mostrar portafolio de proyectos y servicios ofrecidos.",
+    image: "/",
+    technologies: ["Astro", "Tailwind CSS", "TypeScript"],
+    demoUrl: "/",
+    githubUrl: "/",
+  },
+    {
+    id: 5,
+    title: "Aplicación de Peliculas",
+    description: "Aplicación web para buscar y ver peliculas, con funcionalidades de busqueda, favoritos y recomendaciones.",
+    image: "/",
+    technologies: ["Astro", "Tailwind CSS", "Laravel", "MySQL"],
+    demoUrl: "/",
+    githubUrl: "/",
+  },
+    {
+    id: 6,
+    title: "Andy Repuestos",
+    description: "Aplicacion de escritorio para getion de ventas y control de inventario para la empresa Andy Repuestos, con funcionalidades de gestion de productos, ventas, clientes y reportes.",
+    image: "/",
+    technologies: ["Visual Basic", "SQL Server"],
+    demoUrl: "/",
+    githubUrl: "/",
   }
+  ,
+    {
+    id: 8,
+    title: "Sistema de Facturación",
+    description: "Aplicación web para la gestión de facturación y ventas, con funcionalidades de generación de facturas, control de inventario y reportes.",
+    image: "/",
+    technologies: ["C#", "ASP.NET", "SQL Server"],
+    demoUrl: "/",
+    githubUrl: "/",
+  }
+  // ,
+  //   {
+  //   id: 9,
+  //   title: "",
+  //   description: "",
+  //   image: "/",
+  //   technologies: [],
+  //   demoUrl: "/",
+  //   githubUrl: "/",
+  // }
 ]
 
 // export const testimonials: Testimonial[] = [
@@ -140,7 +205,7 @@ export const skillsWithLogos: Record<string, SkillWithLogo[]> = {
     { name: "Tailwind CSS", level: 85, logo: "/skills/tailwindcss-icon-svgrepo-com.svg" },
     // { name: "Vue.js", level: 70, logo: "/skills/vue-9-logo-svgrepo-com.svg" },
     { name: "Astro", level: 60, logo: "/skills/astro-svgrepo-com.svg" },
-    { name: "Redux", level: 80, logo: "/skills/redux-svgrepo-com.svg" },
+    // { name: "Redux", level: 80, logo: "/skills/redux-svgrepo-com.svg" },
     { name: "HTML5", level: 95, logo: "/skills/html-5-svgrepo-com.svg" },
     { name: "CSS3", level: 90, logo: "/skills/css-3-svgrepo-com.svg" },
 
@@ -152,6 +217,7 @@ export const skillsWithLogos: Record<string, SkillWithLogo[]> = {
     { name: "Python", level: 60, logo: "/skills/python-svgrepo-com.svg" },
     { name: "PostgreSQL", level: 65, logo: "/skills/postgresql-svgrepo-com.svg" },
     { name: "MySQL", level: 65, logo: "/skills/mysql-svgrepo-com.svg" },
+    { name: "SQL Server", level: 65, logo: "/skills/microsoft-sql-server.svg" },
     { name: "C#", level: 65, logo: "/skills/csharp-svgrepo-com.svg" },
     // { name: "GraphQL", level: 60, logo: "/placeholder.svg?text=GQL" },
     // { name: "MongoDB", level: 70, logo: "/skills/mongo-svgrepo-com.svg" },
@@ -161,8 +227,8 @@ export const skillsWithLogos: Record<string, SkillWithLogo[]> = {
     { name: "Git", level: 90, logo: "/skills/git-svgrepo-com.svg" },
     {name: "Github", level: 90, logo: "/skills/github.svg"},
     { name: "Docker", level: 65, logo: "/skills/docker-svgrepo-com.svg" },
-    { name: "AWS", level: 60, logo: "/skills/aws-svgrepo-com.svg" },
-    { name: "Webpack", level: 70, logo: "/skills/webpack-svgrepo-com.svg" },
+    // { name: "AWS", level: 60, logo: "/skills/aws-svgrepo-com.svg" },
+    // { name: "Webpack", level: 70, logo: "/skills/webpack-svgrepo-com.svg" },
     { name: "Figma", level: 80, logo: "/skills/figma-svgrepo-com.svg" },
     { name: "VS Code", level: 95, logo: "/skills/vscode-svgrepo-com.svg" },
 

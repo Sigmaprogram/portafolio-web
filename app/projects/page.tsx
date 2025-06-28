@@ -40,8 +40,8 @@ export default function ProjectsPage() {
               </div>
             </div>
             <div className="container section-padding">
-              <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                {projects.slice(0, 3).map((project) => (
+              <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3  max-w-6xl mx-auto flex flex-col">
+                {projects.map((project) => (
                   <Card
                     key={project.id}
                     className="bg-dark-300 border-dark-500 card-hover"

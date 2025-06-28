@@ -52,7 +52,7 @@ export default function SkillsPage() {
               {/* Tools */}
               <div className="space-y-10">
                 <h2 className="text-2xl font-bold tracking-tight text-center">
-                  Tools & Technologies
+                  Tools
                 </h2>
                 <div className="flex justify-center flex-wrap gap-16">
                   {skillsWithLogos.Tools.map((skill) => (

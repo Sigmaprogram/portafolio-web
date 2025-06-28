@@ -162,7 +162,7 @@ export default function Home() {
                   A selection of projects that showcase my skills and experience
                 </p>
               </div>
-              <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
                 {projects.slice(0, 3).map((project) => (
                   <Card
                     key={project.id}
