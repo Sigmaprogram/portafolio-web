@@ -1,8 +1,8 @@
 "use client";
 
-import type React from "react";
-
-import { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
+import { useToast } from "@/hooks/use-toast";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import {
   ArrowLeft,
@@ -11,37 +11,42 @@ import {
   Linkedin,
   Mail,
   MapPin,
-  Phone,
   Twitter,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
+// ✅ Importa el Toaster
+import { Toaster } from "@/components/ui/toaster";
+
 export default function ContactPage() {
   const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [state, handleSubmit] = useForm("mrbkqand");
+  const [showToast, setShowToast] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    // Simulación de envío de formulario
-    setTimeout(() => {
-      setIsSubmitting(false);
+  useEffect(() => {
+    if (state.succeeded && !showToast) {
       toast({
         title: "Mensaje enviado",
         description: "Gracias por contactarme. Te responderé lo antes posible.",
-        variant: "default",
+        duration: 2000,
       });
-      // Reset form
-      e.currentTarget.reset();
-    }, 1500);
-  };
+      setShowToast(true);
+
+      const form = document.querySelector("form");
+      form?.reset();
+    }
+  }, [state.succeeded, toast, showToast]);
+
+  useEffect(() => {
+    if (!state.submitting && !state.succeeded) {
+      setShowToast(false);
+    }
+  }, [state.submitting, state.succeeded]);
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -85,7 +90,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-medium">Ubicación</h3>
                       <p className="text-sm text-muted-foreground">
-                        Dominican Republic, San Pedro de Macoris
+                        República Dominicana, San Pedro de Macoris
                       </p>
                     </div>
                   </div>
@@ -96,36 +101,28 @@ export default function ContactPage() {
                     <Link
                       href="https://github.com/Sigmaprogram"
                       target="_blank"
-                      rel="noopener noreferrer"
                     >
                       <Button variant="outline" size="icon">
                         <Github className="h-5 w-5" />
-                        <span className="sr-only">GitHub</span>
                       </Button>
                     </Link>
                     <Link
                       href="https://www.linkedin.com/in/kervin-daniel-leonardo-francois-1528b52b0/"
                       target="_blank"
-                      rel="noopener noreferrer"
                     >
                       <Button variant="outline" size="icon">
                         <Linkedin className="h-5 w-5" />
-                        <span className="sr-only">LinkedIn</span>
                       </Button>
                     </Link>
-                    <Link
-                      href="https://x.com/Kervin_fr"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <Link href="https://x.com/Kervin_fr" target="_blank">
                       <Button variant="outline" size="icon">
                         <Twitter className="h-5 w-5" />
-                        <span className="sr-only">Twitter</span>
                       </Button>
                     </Link>
                   </div>
                 </div>
               </div>
+
               <div className="space-y-6">
                 <div className="space-y-2">
                   <h2 className="text-2xl font-bold">Envíame un mensaje</h2>
@@ -138,55 +135,87 @@ export default function ContactPage() {
                   <div className="grid gap-3">
                     <label
                       htmlFor="name"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      className="text-sm font-medium leading-none"
                     >
                       Nombre
                     </label>
-                    <Input id="name" placeholder="Tu nombre" required />
+                    <Input
+                      id="name"
+                      name="name"
+                      placeholder="Tu nombre"
+                      required
+                    />
+                    <ValidationError
+                      prefix="Nombre"
+                      field="name"
+                      errors={state.errors}
+                    />
                   </div>
+
                   <div className="grid gap-3">
                     <label
                       htmlFor="email"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      className="text-sm font-medium leading-none"
                     >
                       Email
                     </label>
                     <Input
                       id="email"
+                      name="email"
                       type="email"
-                      placeholder="Example@email.com"
+                      placeholder="example@email.com"
                       required
                     />
+                    <ValidationError
+                      prefix="Email"
+                      field="email"
+                      errors={state.errors}
+                    />
                   </div>
+
                   <div className="grid gap-3">
                     <label
                       htmlFor="subject"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      className="text-sm font-medium leading-none"
                     >
                       Asunto
                     </label>
                     <Input
                       id="subject"
-                      placeholder="Asunto de tu mensaje"
+                      name="subject"
+                      placeholder="Asunto del mensaje"
                       required
                     />
+                    <ValidationError
+                      prefix="Asunto"
+                      field="subject"
+                      errors={state.errors}
+                    />
                   </div>
+
                   <div className="grid gap-3">
                     <label
                       htmlFor="message"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      className="text-sm font-medium leading-none"
                     >
                       Mensaje
                     </label>
                     <Textarea
                       id="message"
+                      name="message"
                       placeholder="Tu mensaje"
                       className="min-h-[120px]"
                       required
                     />
+                    <ValidationError
+                      prefix="Mensaje"
+                      field="message"
+                      errors={state.errors}
+                    />
                   </div>
-                  <Button type="submit" disabled={isSubmitting}>
-                    {isSubmitting ? (
+
+                  <Button type="submit" disabled={state.submitting}>
+                    {state.submitting ? (
                       <>Enviando...</>
                     ) : (
                       <>
@@ -197,6 +226,7 @@ export default function ContactPage() {
                 </form>
               </div>
             </div>
+
             <div className="flex justify-center mt-12">
               <Button asChild variant="outline">
                 <Link href="/">
@@ -208,6 +238,9 @@ export default function ContactPage() {
         </section>
       </main>
       <Footer />
+
+      {/* ✅ Muestra los toast aquí */}
+      <Toaster />
     </div>
   );
 }

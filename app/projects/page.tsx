@@ -85,7 +85,7 @@ export default function ProjectsPage() {
                               rel="noopener noreferrer"
                             >
                               <Github className="mr-2 h-3 w-3" />
-                              Code
+                              Github
                             </Link>
                           </Button>
                         )}

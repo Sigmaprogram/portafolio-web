@@ -36,21 +36,21 @@ export default function AboutPage() {
               <div className="space-y-8">
                 <div className="space-y-4">
                   <h1 className="text-4xl font-bold tracking-tight lg:text-5xl">
-                    About Me
+                    Sobre mi
                   </h1>
                   <p className="text-lg text-dark-900 leading-relaxed">
-                    I'm a passionate full-stack developer with over 5 years of
-                    experience creating digital solutions that make a
-                    difference. I specialize in modern web technologies and have
-                    a strong focus on user experience and performance
-                    optimization.
+                    Soy un desarrollador full-stack enfocado en crear
+                    aplicaciones web modernas y funcionales. Trabajo con
+                    tecnologías como JavaScript, React y Node.js, y me apasiona
+                    construir experiencias intuitivas y eficientes para los
+                    usuarios.
                   </p>
                   <p className="text-lg text-dark-900 leading-relaxed">
-                    My journey in tech started with a curiosity about how things
-                    work, which led me to pursue computer science and eventually
-                    specialize in web development. I've had the privilege of
-                    working with startups and established companies, helping
-                    them bring their digital visions to life.
+                    Siempre estoy aprendiendo y mejorando mis habilidades para
+                    mantenerme al día con las últimas tendencias del desarrollo
+                    web. Me gusta trabajar en proyectos desafiantes que me
+                    permitan crecer y aportar soluciones prácticas y bien
+                    diseñadas.
                   </p>
                 </div>
 
@@ -71,9 +71,9 @@ export default function AboutPage() {
                       <MapPin className="h-5 w-5 text-primary" />
                     </div>
                     <div>
-                      <p className="text-sm text-dark-900">Location</p>
+                      <p className="text-sm text-dark-900">Localización</p>
                       <p className="font-medium">
-                        Dominican Republic, San pedro de Macoris
+                        República Dominicana, San pedro de Macoris
                       </p>
                     </div>
                   </div>
@@ -85,7 +85,7 @@ export default function AboutPage() {
                     className="bg-primary hover:bg-primary/90 text-black font-medium"
                   >
                     <Link href="/contact">
-                      Get in touch <ArrowRight className="ml-2 h-4 w-4" />
+                      Ponte en contacto <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
                   <Button
@@ -93,8 +93,8 @@ export default function AboutPage() {
                     asChild
                     className="border-dark-600 hover:bg-secondary"
                   >
-                    <Link href="/files/cv.pdf" target="_blank">
-                      <Download className="mr-2 h-4 w-4" /> Download CV
+                    <Link href="/docs/cv.pdf" target="_blank">
+                      <Download className="mr-2 h-4 w-4" /> Descargar CV
                     </Link>
                   </Button>
                 </div>
@@ -120,7 +120,7 @@ export default function AboutPage() {
             <div className="grid gap-16 lg:grid-cols-2">
               {/* Education */}
               <div className="space-y-8">
-                <h2 className="text-2xl font-bold tracking-tight">Education</h2>
+                <h2 className="text-2xl font-bold tracking-tight">Educación</h2>
                 <div className="space-y-6">
                   {education.map((item, index) => (
                     <div key={index} className="flex gap-4">
@@ -153,7 +153,7 @@ export default function AboutPage() {
               {/* Certifications */}
               <div className="space-y-8">
                 <h2 className="text-2xl font-bold tracking-tight">
-                  Certifications
+                  Certificaciones
                 </h2>
                 <div className="grid gap-4">
                   {certifications.map((cert, index) => (
@@ -192,7 +192,8 @@ export default function AboutPage() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
-                                View Certificate
+                                Ver certificado{" "}
+                                <ArrowRight className="ml-1 h-4 w-4" />
                               </Link>
                             </Button>
                           )}

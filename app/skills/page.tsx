@@ -17,18 +17,18 @@ export default function SkillsPage() {
             <div className="space-y-20">
               <div className="text-center space-y-4">
                 <h1 className="text-4xl font-bold tracking-tight lg:text-5xl">
-                  Skills & Technologies
+                  Habilidades y Tecnologías
                 </h1>
                 <p className="text-lg text-dark-900 max-w-2xl mx-auto">
-                  A comprehensive overview of the technologies and tools I use
-                  to build exceptional digital experiences.
+                  Una descripción general de las tecnologías y herramientas que
+                  utilizo para construir experiencias digitales excepcionales.
                 </p>
               </div>
 
               {/* Frontend */}
               <div className="space-y-10 ">
                 <h2 className="text-2xl font-bold tracking-tight text-center">
-                  Frontend Development
+                  Tecnologias Frontend
                 </h2>
                 <div className="flex justify-center flex-wrap gap-16">
                   {skillsWithLogos.Frontend.map((skill) => (
@@ -40,7 +40,7 @@ export default function SkillsPage() {
               {/* Backend */}
               <div className="space-y-10">
                 <h2 className="text-2xl font-bold tracking-tight text-center">
-                  Backend Development
+                  Tecnologias Backend
                 </h2>
                 <div className="flex justify-center flex-wrap gap-16">
                   {skillsWithLogos.Backend.map((skill) => (
@@ -52,7 +52,7 @@ export default function SkillsPage() {
               {/* Tools */}
               <div className="space-y-10">
                 <h2 className="text-2xl font-bold tracking-tight text-center">
-                  Tools
+                  Herramientas
                 </h2>
                 <div className="flex justify-center flex-wrap gap-16">
                   {skillsWithLogos.Tools.map((skill) => (
@@ -63,7 +63,7 @@ export default function SkillsPage() {
 
               {/* Soft Skills
               <div className="space-y-10">
-                <h2 className="text-2xl font-bold tracking-tight text-center">Professional Skills</h2>
+                <h2 className="text-2xl font-bold tracking-tight text-center">Habilidades Profesionales</h2>
                 <div className="flex justify-center flex-wrap gap-16">
                   {skillsWithLogos.Soft.map((skill) => (
                     <SkillLogo key={skill.name} skill={skill} />

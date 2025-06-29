@@ -28,19 +28,19 @@ export default function Navbar() {
             href="/"
             className="text-sm font-medium text-dark-900 hover:text-white transition-colors"
           >
-            Home
+            Inicio
           </Link>
           <Link
             href="/about"
             className="text-sm font-medium text-dark-900 hover:text-white transition-colors"
           >
-            About
+            Sobre mi
           </Link>
           <Link
             href="/projects"
             className="text-sm font-medium text-dark-900 hover:text-white transition-colors"
           >
-            Projects
+            Proyectos
           </Link>
           {/* <Link href="/experience" className="text-sm font-medium text-dark-900 hover:text-white transition-colors">
             Experience
@@ -49,13 +49,13 @@ export default function Navbar() {
             href="/skills"
             className="text-sm font-medium text-dark-900 hover:text-white transition-colors"
           >
-            Skills
+            Habilidades
           </Link>
           <Link
             href="/contact"
             className="text-sm font-medium text-dark-900 hover:text-white transition-colors"
           >
-            Contact
+            Contacto
           </Link>
         </nav>
         <div className="flex items-center">
@@ -80,21 +80,21 @@ export default function Navbar() {
         <div className="container container-padding py-6 bg-dark-100">
           <nav className="flex flex-col space-y-6">
             <Link href="/" className="text-lg font-medium" onClick={toggleMenu}>
-              Home
+              Inicio
             </Link>
             <Link
               href="/about"
               className="text-lg font-medium"
               onClick={toggleMenu}
             >
-              About
+              Sobre mi
             </Link>
             <Link
               href="/projects"
               className="text-lg font-medium"
               onClick={toggleMenu}
             >
-              Projects
+              Proyectos
             </Link>
             {/* <Link
               href="/experience"
@@ -108,14 +108,14 @@ export default function Navbar() {
               className="text-lg font-medium"
               onClick={toggleMenu}
             >
-              Skills
+              Habilidades
             </Link>
             <Link
               href="/contact"
               className="text-lg font-medium"
               onClick={toggleMenu}
             >
-              Contact
+              Contacto
             </Link>
           </nav>
           <Button

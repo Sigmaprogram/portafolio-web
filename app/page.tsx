@@ -40,12 +40,12 @@ export default function Home() {
               <div className="space-y-8">
                 <div className="space-y-2">
                   <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-                    Hi, I'm{" "}
+                    Hola, soy{" "}
                     <span className="text-gradient">Kervin Leonardo</span>
                   </h1>
                   <p className="text-xl text-dark-900 leading-relaxed max-w-2xl">
-                    Full-stack developer crafting digital experiences with clean
-                    code and thoughtful design.
+                    Desarrollador full-stack especializado en aplicaciones web
+                    modernas, priorizando buenas prácticas y usabilidad.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -55,7 +55,7 @@ export default function Home() {
                     className="bg-primary hover:bg-primary/90 text-black font-medium"
                   >
                     <Link href="/contact">
-                      Get in touch <ArrowRight className="ml-2 h-4 w-4" />
+                      Ponte en contacto <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
                   <Button
@@ -64,8 +64,8 @@ export default function Home() {
                     asChild
                     className="border-dark-600 hover:bg-secondary"
                   >
-                    <Link href="/files/cv.pdf" target="_blank">
-                      <Download className="mr-2 h-4 w-4" /> Download CV
+                    <Link href="/docs/cv.pdf" target="_blank">
+                      <Download className="mr-2 h-4 w-4" /> Descargar CV
                     </Link>
                   </Button>
                 </div>
@@ -97,7 +97,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent rounded-2xl"></div>
                   <Image
                     src="me.png"
-                    alt="Professional headshot"
+                    alt="Foto profesional"
                     fill
                     className="object-cover rounded-2xl border border-dark-400"
                     priority
@@ -115,7 +115,7 @@ export default function Home() {
               <div className="relative w-full h-96 lg:h-[500px]">
                 <Image
                   src="sa.png"
-                  alt="Working environment"
+                  alt="Entorno de trabajo"
                   fill
                   className="object-cover rounded-2xl border border-dark-400"
                 />
@@ -123,18 +123,21 @@ export default function Home() {
               <div className="space-y-6">
                 <div className="space-y-4">
                   <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">
-                    About Me
+                    Sobre mí
                   </h2>
                   <p className="text-lg text-dark-900 leading-relaxed">
-                    I'm a passionate full-stack developer with 5+ years of
-                    experience building scalable web applications. I specialize
-                    in modern JavaScript frameworks and have a keen eye for user
-                    experience design.
+                    Soy un desarrollador full-stack enfocado en crear
+                    aplicaciones web modernas y funcionales. Trabajo con
+                    tecnologías como JavaScript, React y Node.js, y me apasiona
+                    construir experiencias intuitivas y eficientes para los
+                    usuarios.
                   </p>
                   <p className="text-lg text-dark-900 leading-relaxed">
-                    When I'm not coding, you'll find me exploring new
-                    technologies, contributing to open source projects, or
-                    sharing knowledge with the developer community.
+                    Siempre estoy aprendiendo y mejorando mis habilidades para
+                    mantenerme al día con las últimas tendencias del desarrollo
+                    web. Me gusta trabajar en proyectos desafiantes que me
+                    permitan crecer y aportar soluciones prácticas y bien
+                    diseñadas.
                   </p>
                 </div>
                 <Button
@@ -142,7 +145,7 @@ export default function Home() {
                   className="border-primary bg-primary hover:bg-primary/90"
                 >
                   <Link href="/about">
-                    Learn more <ArrowRight className="ml-2 h-4 w-4" />
+                    Saber más <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
               </div>
@@ -156,10 +159,11 @@ export default function Home() {
             <div className="space-y-12">
               <div className="text-center space-y-4">
                 <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">
-                  Featured Projects
+                  Proyectos Destacados
                 </h2>
                 <p className="text-lg text-dark-900 max-w-2xl mx-auto">
-                  A selection of projects that showcase my skills and experience
+                  Una selección de proyectos que muestran mis habilidades y
+                  experiencia
                 </p>
               </div>
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
@@ -207,7 +211,7 @@ export default function Home() {
                               rel="noopener noreferrer"
                             >
                               <Github className="mr-2 h-3 w-3" />
-                              Code
+                              GitHub
                             </Link>
                           </Button>
                         )}
@@ -240,7 +244,8 @@ export default function Home() {
                   className="border-dark-600 hover:bg-secondary"
                 >
                   <Link href="/projects">
-                    View all projects <ArrowRight className="ml-2 h-4 w-4" />
+                    Ver todos los proyectos{" "}
+                    <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
               </div>
@@ -254,17 +259,17 @@ export default function Home() {
             <div className="space-y-16">
               <div className="text-center space-y-4">
                 <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">
-                  Skills & Technologies
+                  Habilidades y Tecnologías
                 </h2>
                 <p className="text-lg text-dark-900 max-w-2xl mx-auto">
-                  Technologies I work with to bring ideas to life
+                  Tecnologías con las que trabajo para dar vida a las ideas
                 </p>
               </div>
 
               <div className="space-y-12">
                 <div className="space-y-8">
                   <h3 className="text-xl font-semibold text-center">
-                    Frontend Development
+                    Tecnologias Frontend
                   </h3>
                   <div className="flex justify-center flex-wrap gap-16">
                     {skillsWithLogos.Frontend.slice(0, 8).map((skill) => (
@@ -275,7 +280,7 @@ export default function Home() {
 
                 <div className="space-y-8">
                   <h3 className="text-xl font-semibold text-center">
-                    Backend Development
+                    Tecnologias Backend
                   </h3>
                   <div className="flex justify-center flex-wrap gap-16">
                     {skillsWithLogos.Backend.slice(0, 8).map((skill) => (
@@ -292,7 +297,8 @@ export default function Home() {
                   className="border-dark-600 hover:bg-secondary"
                 >
                   <Link href="/skills">
-                    View all skills <ArrowRight className="ml-2 h-4 w-4" />
+                    Ver todas las habilidades{" "}
+                    <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
               </div>
@@ -306,11 +312,11 @@ export default function Home() {
             <div className="max-w-2xl mx-auto text-center space-y-8">
               <div className="space-y-4">
                 <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">
-                  Let's Work Together
+                  Trabajemos Juntos
                 </h2>
                 <p className="text-lg text-dark-900">
-                  I'm always interested in new opportunities and exciting
-                  projects.
+                  Siempre estoy interesado en nuevas oportunidades y proyectos
+                  emocionantes.
                 </p>
               </div>
               <Button
@@ -319,7 +325,7 @@ export default function Home() {
                 className="bg-primary hover:bg-primary/90 text-black font-medium"
               >
                 <Link href="/contact">
-                  Get in touch <ArrowRight className="ml-2 h-4 w-4" />
+                  Ponte en contacto <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
             </div>
