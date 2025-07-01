@@ -104,15 +104,15 @@ export const projects: Project[] = [
   //   demoUrl: "/",
   //   githubUrl: "/",
   // },
-    {
-    id: 6,
-    title: "Andy Repuestos",
-    description: "Aplicacion de escritorio para getion de ventas y control de inventario para la empresa Andy Repuestos, con funcionalidades de gestion de productos, ventas, clientes y reportes.",
-    image: "/projects/andyrep.png",
-    technologies: ["Visual Basic","Windows Form", "SQL Server"],
-    demoUrl: "",
-    githubUrl: "https://github.com/Sigmaprogram/andy-repuestos",
-  }
+  //   {
+  //   id: 6,
+  //   title: "Andy Repuestos",
+  //   description: "Aplicacion de escritorio para getion de ventas y control de inventario para la empresa Andy Repuestos, con funcionalidades de gestion de productos, ventas, clientes y reportes.",
+  //   image: "/projects/andyrep.png",
+  //   technologies: ["Visual Basic","Windows Form", "SQL Server"],
+  //   demoUrl: "",
+  //   githubUrl: "https://github.com/Sigmaprogram/andy-repuestos",
+  // }
   // ,
   //   {
   //   id: 8,
