@@ -37,14 +37,18 @@ export default function Navbar() {
             Sobre mi
           </Link>
           <Link
+            href="/experience"
+            className="text-sm font-medium text-dark-900 hover:text-white transition-colors"
+          >
+            Experiencia
+          </Link>
+          <Link
             href="/projects"
             className="text-sm font-medium text-dark-900 hover:text-white transition-colors"
           >
             Proyectos
           </Link>
-          {/* <Link href="/experience" className="text-sm font-medium text-dark-900 hover:text-white transition-colors">
-            Experience
-          </Link> */}
+
           <Link
             href="/skills"
             className="text-sm font-medium text-dark-900 hover:text-white transition-colors"

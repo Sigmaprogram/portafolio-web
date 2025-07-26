@@ -68,15 +68,15 @@ export const projects: Project[] = [
     demoUrl: "https://click-venta-pos.vercel.app/",
     githubUrl: "https://github.com/Sigmaprogram/click-venta-pos",
   },
-  //   {
-  //   id: 2,
-  //   title: "Cuadro Arquitectura Landing Page",
-  //   description: "Landing page para la empresa de arquitectura Cuadro Arquitectura, incluye portafolio de proyectos y servicios.",
-  //   image: "/projects/CuadroArquitectura.png",
-  //   technologies: ["Angular", "Tailwind CSS","NodeJS", "MySQL"],
-  //   demoUrl: "https://cuadro-arquitectura.vercel.app/",
-  //   githubUrl: "https://github.com/Sigmaprogram/cuadro-arquitectura",
-  // },
+    {
+    id: 2,
+    title: "Cuadro Arquitectura Landing Page",
+    description: "Landing page para la empresa de arquitectura Cuadro Arquitectura, incluye portafolio de proyectos y servicios.",
+    image: "/projects/CuadroArquitectura.png",
+    technologies: ["Angular", "Tailwind CSS","NodeJS", "MySQL"],
+    demoUrl: "https://cuadro-arquitectura.vercel.app/",
+    githubUrl: "https://github.com/Sigmaprogram/cuadro-arquitectura",
+  },
   // {
   //   id: 3,
   //   title: "DoFlow Aplicación de Productividad",
@@ -104,15 +104,15 @@ export const projects: Project[] = [
   //   demoUrl: "/",
   //   githubUrl: "/",
   // },
-  //   {
-  //   id: 6,
-  //   title: "Andy Repuestos",
-  //   description: "Aplicacion de escritorio para getion de ventas y control de inventario para la empresa Andy Repuestos, con funcionalidades de gestion de productos, ventas, clientes y reportes.",
-  //   image: "/projects/andyrep.png",
-  //   technologies: ["Visual Basic","Windows Form", "SQL Server"],
-  //   demoUrl: "",
-  //   githubUrl: "https://github.com/Sigmaprogram/andy-repuestos",
-  // }
+    {
+    id: 6,
+    title: "Andy Repuestos",
+    description: "Aplicacion de escritorio para getion de ventas y control de inventario para la empresa Andy Repuestos, con funcionalidades de gestion de productos, ventas, clientes y reportes.",
+    image: "/projects/andyrep.png",
+    technologies: ["Visual Basic","Windows Form", "SQL Server"],
+    demoUrl: "",
+    githubUrl: "https://github.com/Sigmaprogram/andy-repuestos",
+  }
   // ,
   //   {
   //   id: 8,
@@ -126,10 +126,10 @@ export const projects: Project[] = [
   // ,
   //   {
   //   id: 9,
-  //   title: "",
-  //   description: "",
+  //   title: "Sua Studio",
+  //   description: "Aplicación web para estudio de produccion musical y sello discografico",
   //   image: "/",
-  //   technologies: [],
+  //   technologies: ["Astro", "Tailwind", "Laravel", "Mysql"],
   //   demoUrl: "/",
   //   githubUrl: "/",
   // }
@@ -147,20 +147,21 @@ export const projects: Project[] = [
 //   }
 // ]
 
-// export const experience: Experience[] = [
-//   {
-//     company: "TechSolutions",
-//     position: "Desarrollador Full Stack Senior",
-//     period: "2021 - Presente",
-//     description:
-//       "Desarrollo y mantenimiento de aplicaciones web para clientes de diversos sectores. Liderazgo técnico en proyectos clave.",
-//     achievements: [
-//       "Reducción del 40% en tiempo de carga",
-//       "Implementación de CI/CD",
-//       "Mentorización de desarrolladores junior",
-//     ],
-//   },
-// ]
+export const experience: Experience[] = [
+  {
+    company: "Sua Studio",
+    position: "Desarrollador Full Stack",
+    period: "6/25 - 8/25",
+    description:
+      "Desarrollo completo de la aplicación web para el estudio de produccion musical Sua Studio.",
+    achievements: [
+      "Diseño de la landing page",
+      "Desarrollo del frontend",
+      "Desarrollo del backend",
+      "Optimización y CEO",
+    ],
+  },
+]
 
 export const education: Education[] = [
   {
